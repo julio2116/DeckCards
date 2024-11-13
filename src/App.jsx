@@ -1,9 +1,15 @@
 import AllCards from './components/AllCards.jsx'
+import Context from './components/Context.js'
+import { useState } from 'react';
 
 function App() {
+  let [display, setDisplay] = useState('none');
+
   return(
   <>
-    <AllCards />
+    <Context.Provider value={[display, setDisplay]}>
+      <AllCards />
+    </Context.Provider>
   </>
   )
 

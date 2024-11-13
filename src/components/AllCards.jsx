@@ -1,13 +1,17 @@
 import styles from '../components/allCardsStyles.module.css'
 import Card from '../components/Card.jsx'
 import Modal from '../components/Modal.jsx'
+import { useContext } from "react";
+import Context from '../components/Context.js';
 
 const AllCards = () => {
     let array = [];
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 4; i++){
         array.push(i);
     }
-    var display = 'block'
+
+    let [display, setDisplay] = useContext(Context);
+
     return(
         <>
             <div className={styles.container} style={{maxWidth:`${(array.length-1)*170+250}px`, height:`420px`}}>
@@ -16,7 +20,7 @@ const AllCards = () => {
                     
                 ))}
             </div>
-            <Modal display= {display}/>
+            <Modal display= {display} />
         </>
     )
 }
