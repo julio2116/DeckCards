@@ -10,9 +10,9 @@ const AllCards = () => {
     var display = 'block'
     return(
         <>
-            <div className={styles.container} style={{maxWidth:`${(array.length-1)*150+250}px`, height:`420px`}}>
+            <div className={styles.container} style={{maxWidth:`${(array.length-1)*170+250}px`, height:`420px`}}>
                 {array.map((number, index) => (
-                    <Card key={index} positionLeft={`${index*150}px`} />
+                    <Card key={index} positionLeft={`${index*170}px`} i={index}/>
                     
                 ))}
             </div>
