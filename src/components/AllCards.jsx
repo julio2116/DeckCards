@@ -6,7 +6,7 @@ import Context from '../components/Context.js';
 
 const AllCards = () => {
     let array = [];
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 5; i++) {
         array.push(i);
     }
 
@@ -15,7 +15,7 @@ const AllCards = () => {
     return (
         <>
             <div>
-                <div className={styles.container} style={{ maxWidth: `${(array.length - 1) * 170 + 250}px`, height: `420px` }}>
+                <div className={styles.container} style={{ maxWidth: `${(array.length - 1) * 170 + 210}px`, height: `310px` }}>
                     {array.map((number, index) => (
                         <Card key={index} positionLeft={`${index * 170}px`} i={index} />
 
