@@ -1,10 +1,10 @@
 .modal{
-    background-color: black;
+    background: linear-gradient(in hsl, blue, red 80%);
     color: white;
-    width: 600px;
+    width: 800px;
     position: absolute;
     top: 20px;
-    height: 370px;
+    height: 600px;
     z-index: 10;
     border-radius: 10px;
     padding: 10px;
@@ -23,4 +23,11 @@
 }
 .modalText{
     padding:20px;
+}
+.a{
+    width: 100hw;
+    height: 100vh;
+    background-color: #00000020;
+    position: absolute;
+    top: 0;
 }

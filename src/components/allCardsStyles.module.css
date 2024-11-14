@@ -4,3 +4,10 @@
     justify-self: center;
     position: relative;
 }
+.a{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000020;
+    top: 0;
+    position: absolute;
+}

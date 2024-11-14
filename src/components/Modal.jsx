@@ -8,10 +8,12 @@ function Modal() {
 
     return (
         <>
-        <div style={{ display: display }} className={styles.modalBox}>
+        <div style={{ display: display }} >
+            <div className={styles.modalBox}>
             <div className={styles.modal}>
                 <span className={styles.modalText}>Some text in the Modal..</span>
                 <span className={styles.closeModal} onClick={() => setDisplay('none')} >&times;</span>
+            </div>
             </div>
         </div>
         </>
