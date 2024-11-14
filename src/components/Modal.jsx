@@ -1,17 +1,19 @@
 import styles from '../components/modalStyles.module.css'
+import { useContext } from "react";
+import Context from '../components/Context.js';
 
-function Modal(props) {
+function Modal() {
 
-    let display = props.display;
-    {!display && (
-        display = 'none')}
+    let [display, setDisplay] = useContext(Context);
 
     return (
         <>
-            <div style={{ display: display }} className={styles.modal} >
-                <span>&times;</span>
-                <p>Some text in the Modal..</p>
+        <div style={{ display: display }} className={styles.modalBox}>
+            <div className={styles.modal}>
+                <span className={styles.modalText}>Some text in the Modal..</span>
+                <span className={styles.closeModal} onClick={() => setDisplay('none')} >&times;</span>
             </div>
+        </div>
         </>
     )
 }

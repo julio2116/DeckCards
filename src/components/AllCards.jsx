@@ -6,7 +6,7 @@ import Context from '../components/Context.js';
 
 const AllCards = () => {
     let array = [];
-    for(let i = 0; i < 4; i++){
+    for(let i = 0; i < 3; i++){
         array.push(i);
     }
 

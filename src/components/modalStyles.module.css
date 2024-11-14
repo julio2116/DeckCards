@@ -1,4 +1,26 @@
 .modal{
     background-color: black;
     color: white;
+    width: 600px;
+    position: absolute;
+    top: 20px;
+    height: 370px;
+    z-index: 10;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+}
+.modalBox{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.closeModal{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 30px;
+}
+.modalText{
+    padding:20px;
 }
