@@ -26,7 +26,8 @@
 }
 .bgScreen{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 560px;
     background-color: #00000020;
     position: absolute;
     top: 0;
