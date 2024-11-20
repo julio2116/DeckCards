@@ -7,9 +7,9 @@ const Card = (props) => {
 
     return (
         <>
-            <div className={styles.card} style={{ left: `${props.positionLeft}` }} onClick={() => setDisplay('flex')}></div>
+            <div className={styles.card} style={{ left: `${props.positionLeft}` }}onClick={() => {setDisplay('flex')}}>
+            </div>
         </>
-        
     )
 }
 export default Card

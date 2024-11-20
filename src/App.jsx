@@ -1,6 +1,7 @@
-import AllCards from './components/AllCards.jsx'
-import Context from './components/Context.js'
+import AllCards from './components/AllCards.jsx';
+import Context from './components/Context.js';
 import { useState } from 'react';
+import './App.css'
 
 function App() {
   let [display, setDisplay] = useState('none');

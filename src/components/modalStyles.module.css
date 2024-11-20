@@ -1,10 +1,10 @@
 .modal{
     background: linear-gradient(in hsl, blue, red 80%);
     color: white;
-    width: 800px;
+    width: 700px;
     position: absolute;
     top: 20px;
-    height: 600px;
+    height: 500px;
     z-index: 10;
     border-radius: 10px;
     padding: 10px;
@@ -22,11 +22,11 @@
     font-size: 30px;
 }
 .modalText{
-    padding:20px;
+    padding: 20px;
 }
-.a{
-    width: 100hw;
-    height: 100vh;
+.bgScreen{
+    width: 100%;
+    min-height: 100vh;
     background-color: #00000020;
     position: absolute;
     top: 0;

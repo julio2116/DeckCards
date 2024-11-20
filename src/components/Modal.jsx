@@ -8,14 +8,15 @@ function Modal() {
 
     return (
         <>
-        <div style={{ display: display }} >
-            <div className={styles.modalBox}>
-            <div className={styles.modal}>
-                <span className={styles.modalText}>Some text in the Modal..</span>
-                <span className={styles.closeModal} onClick={() => setDisplay('none')} >&times;</span>
+            <div className={styles.bgScreen} style={{display:`${display}`}} onClick={() => setDisplay('none')}></div>
+            <div style={{ display: display }} >
+                <div className={styles.modalBox}>
+                <div className={styles.modal}>
+                    <span className={styles.modalText}>Some text in the Modal..</span>
+                    <span className={styles.closeModal} onClick={() => setDisplay('none')} >&times;</span>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
         </>
     )
 }

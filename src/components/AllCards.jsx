@@ -14,17 +14,12 @@ const AllCards = () => {
 
     return (
         <>
-            <div>
-                <div className={styles.container} style={{ maxWidth: `${(array.length - 1) * 170 + 210}px`, height: `310px` }}>
-                    {array.map((number, index) => (
-                        <Card key={index} positionLeft={`${index * 170}px`} i={index} />
-
-                    ))}
-                </div>
-                <div className={styles.a} style={{display:`${display}`}} onClick={() => setDisplay('none')}></div>
-                <Modal display={display} />
+            <div className={styles.container} style={{ maxWidth: `${(array.length - 1) * 170 + 210}px`, height: `310px` }}>
+                {array.map((number, index) => (
+                    <Card key={index} positionLeft={`${index * 170}px`} i={index} />
+                ))}
             </div>
-
+            <Modal display={display} />
         </>
     )
 }
