@@ -19,7 +19,13 @@
 .closeModal{
     cursor: pointer;
     padding: 5px;
-    font-size: 30px;
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    text-align: center;
+    width: 20px;
+    line-height: 25px;
 }
 .modalText{
     padding: 20px;

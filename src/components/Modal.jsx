@@ -13,7 +13,7 @@ function Modal() {
                 <div className={styles.modalBox}>
                 <div className={styles.modal}>
                     <span className={styles.modalText}>Some text in the Modal..</span>
-                    <span className={styles.closeModal} onClick={() => setVar(varGlobal= {display: 'none'})} >&times;</span>
+                    <div className={styles.closeModal} onClick={() => setVar(varGlobal= {display: 'none'})} >x</div>
                 </div>
                 </div>
             </div>
