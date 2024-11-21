@@ -10,7 +10,7 @@ const AllCards = () => {
         array.push(i);
     }
 
-    let [display, setDisplay] = useContext(Context);
+    let [varGlobal, setVar] = useContext(Context);
 
     return (
         <>
@@ -19,7 +19,8 @@ const AllCards = () => {
                     <Card key={index} positionLeft={`${index * 170}px`} i={index} />
                 ))}
             </div>
-            <Modal display={display} />
+            <Modal display={varGlobal.display} />
+            {/* {console.log(varGlobal.display)} */}
         </>
     )
 }

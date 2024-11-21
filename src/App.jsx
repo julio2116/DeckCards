@@ -4,11 +4,11 @@ import { useState } from 'react';
 import './App.css'
 
 function App() {
-  let [display, setDisplay] = useState('none');
+  let [varGlobal, setVar] = useState({display: 'none'});
 
   return(
   <>
-    <Context.Provider value={[display, setDisplay]}>
+    <Context.Provider value={[varGlobal, setVar]}>
       <AllCards />
     </Context.Provider>
   </>

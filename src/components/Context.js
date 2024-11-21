@@ -1,5 +1,5 @@
 import { createContext } from 'react';
 
-const Display = createContext(['none', () => {}]);
+const VarGlobal = createContext([{}, () => {}]);
 
-export default Display;
+export default VarGlobal;

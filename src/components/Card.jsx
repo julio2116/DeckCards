@@ -3,12 +3,13 @@ import { useContext } from "react";
 import Context from '../components/Context.js';
 
 const Card = (props) => {
-    let [display, setDisplay] = useContext(Context);
+    let [varGlobal, setVar] = useContext(Context);
+    let {display1} = varGlobal;
 
     return (
         <>
-            <div className={styles.card} style={{ left: `${props.positionLeft}` }}onClick={() => {setDisplay('flex')}}>
-            </div>
+            <div className={styles.card} style={{ left: `${props.positionLeft}` }} onClick={() => {setVar(varGlobal= {display: 'flex'})}}></div>
+            {/* {console.log(varGlobal.display)} */}
         </>
     )
 }
